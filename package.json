@@ -13,15 +13,16 @@
     "url": "https://github.com/PrismarineJS/prismarine-block.git"
   },
   "dependencies": {
-    "prismarine-biome": "^1.0.0"
+    "prismarine-biome": "^1.0.0",
+    "prismarine-block": "ronthecookie/prismarine-block"
   },
   "peerDependencies": {
     "minecraft-data": "^2.0.0"
   },
   "devDependencies": {
+    "@types/vec3": "^0.0.29",
     "minecraft-data": "^2.35.0",
-    "standard": "^11.0.1",
-    "@types/vec3": "^0.0.29"
+    "standard": "^11.0.1"
   },
   "keywords": [
     "prismarine",
