@@ -3,7 +3,8 @@
  * Paintings and signs are not declared because they aren't actually implemented
  */
 import { Vec3 } from "vec3";
-export default function prismarine_block(mcVersion: string): Block;
+// export  function prismarine_block(mcVersion: string): Block;
+
 interface Biome {
     id: number;
     name: string;
@@ -11,8 +12,8 @@ interface Biome {
     rainfall: number;
     temperature: number;
 }
-export class Block {
-    constructor(type: number, biomeId: number, metadata: number);
+export default class Block {
+    constructor(mcVersion: string, type: number, biomeId: number, metadata: number);
 
     canHarvest(heldItemType: number): boolean;
 
