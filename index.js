@@ -17,9 +17,8 @@ let toolMultipliers
 Block.fromStateId = function (stateId, biomeId) {
   return new Block(undefined, biomeId, 0, stateId)
 }
-
+Block.pickVersion = loader;
 function Block (mcVersion, type, biomeId, metadata, stateId) {
-  loader(mcVersion);
   this.type = type
   this.metadata = metadata
   this.light = 0

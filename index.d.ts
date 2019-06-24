@@ -13,8 +13,9 @@ interface Biome {
     temperature: number;
 }
 export default class Block {
-    constructor(mcVersion: string, type: number, biomeId: number, metadata: number);
-
+    constructor(type: number, biomeId: number, metadata: number);
+    static pickVersion(mcVersion: string)
+    static fromStateId(stateId: number, biomeId: number): Block
     canHarvest(heldItemType: number): boolean;
 
     digTime(
