@@ -1,4 +1,4 @@
-module.exports = loader
+module.exports = Block;
 
 function loader (mcVersion) {
   const mcData = require('minecraft-data')(mcVersion)
@@ -18,7 +18,8 @@ Block.fromStateId = function (stateId, biomeId) {
   return new Block(undefined, biomeId, 0, stateId)
 }
 
-function Block (type, biomeId, metadata, stateId) {
+function Block (mcVersion, type, biomeId, metadata, stateId) {
+  loader(mcVersion);
   this.type = type
   this.metadata = metadata
   this.light = 0
