@@ -1,5 +1,5 @@
 {
-  "name": "prismarine-block",
+  "name": "@ronthecookie/prismarine-block",
   "version": "1.1.1",
   "description": "Represent a minecraft block with its associated data",
   "main": "index.js",
